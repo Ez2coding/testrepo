@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div {
   background-color:skyblue;
   padding:20px;
@@ -5,4 +6,13 @@ div {
 
 span {
   color: red;
+=======
+div {
+  background-color:skyblue;
+  padding:20px;
+}
+
+span {
+  color: red;
+>>>>>>> 4de2bbea16f3798be2323d1beea3f8900fa18aca
 }
