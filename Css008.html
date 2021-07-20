@@ -1,0 +1,56 @@
+<!-- 179.P 예제 4-11 텍스트 꾸미기 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스트 꾸미기</title>
+
+  <style>
+    h3 {
+      /* 오른쪽으로 정렬 */
+      text-align: right;
+    }
+
+    span {
+      /* 중간줄 */
+      text-decoration: line-through;
+    }
+
+    strong {
+      /* 윗줄 */
+      text-decoration: overline;
+    }
+
+    .p1 {
+      /*  3 글자 들여쓰기*/
+      text-indent: 3em;
+
+      /* 양쪽 정렬 */
+      text-align: justify;
+    }
+
+    .p2 {
+      /* 1글자 들여쓰기 */
+      text-indent: 1em;
+      /*  중앙 정령 */
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>텍스트꾸미기</h3>
+  <hr>
+  <p class="1">HTML의 태그만으로 기존의 워드 프로세서와 같이 들여쓰기, 정렬, 공백, 간격 등과 세밀한
+    <span>텍스트 제어</span>를 할 수 없다.
+  </p>
+  <p class="2">
+    그러나, <strong>스타일 시트</strong>는 이를 가능하게 한다. 들여쓰기, 정렬에 대해서 알아본다.
+  </p>
+  <a href="http://www.naver.com/" style="text-decoration:none">밑줄이 없는 네이버 링크</a>
+</body>
+
+</html>
