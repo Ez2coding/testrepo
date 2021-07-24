@@ -20,8 +20,28 @@
       background-image: url("img/cat.jpg");
       background-repeat: no-repeat;
       background-size: 300px 150px;
-      margin-bottom: 10px;
-      ;
+      margin: 30px 20px;
+      display: inline-block;
+    }
+
+    .redBox {
+      box-shadow: 10px 10px red;
+    }
+
+    .blurBox {
+      box-shadow: 10px 10px skyblue;
+    }
+
+
+    /* box-shadow : offset-x offset-y blur-radius spreead-radius color */
+    .multiEffect {
+      box-shadow: 2px 2px 2px black,
+        0 0 25px blue,
+        0 0 5px darkblue;
+    }
+
+    .inset {
+      box-shadow: inset 10px 10px 5px gold;
     }
   </style>
 </head>
@@ -30,15 +50,21 @@
   <h3>박스 그림자 만들기</h3>
   <hr>
   <div class="redBox">
-    킹냥이
+    <p>
+      킹냥이
+    </p>
   </div>
 
   <div class="blurBox">
-    언제나
+    <p>언제나</p>
   </div>
 
   <div class="multiEffect">
-    귀여워
+    <p>귀여워</p>
+  </div>
+
+  <div class="inset">
+    <p>사랑해</p>
   </div>
 </body>
 
