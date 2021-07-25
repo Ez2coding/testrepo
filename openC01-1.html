@@ -6,6 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>소프트웨어 기술</title>
+
+  <style>
+    body {
+      background-color: #BEEFFF;
+    }
+
+    form {
+      display: inline-block;
+      background-color: pink;
+      padding: 2vh;
+    }
+
+    footer {
+      background-color: orange;
+      border-radius: 50px;
+    }
+
+    footer > p {
+      margin-left: 2vh;
+    }
+
+    span {
+      color: blue;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      color: brown;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,17 +45,17 @@
   <hr>
 
   <form>
-    학년
+    <span>학년</span>
     <label><input type="radio" name="grade">1학년</label>
     <label><input type="radio" name="grade">2학년</label>
     <label><input type="radio" name="grade">3학년</label>
     <label><input type="radio" name="grade">4학년</label><br>
 
-    성별
+    <span>성별</span>
     <label><input type="radio" name="gender">남성</label>
     <label><input type="radio" name="gender">여성</label><br>
 
-    관심 분야
+    <span>관심 분야</span>
     <select name="IT">
       <option value="1" selected>모바일 소프트웨어</option>
       <option value="2">컴퓨터 소프트웨어</option>
@@ -32,14 +63,14 @@
     </select>
     <br>
 
-    진로
+    <span>진로</span>
     <input type="checkbox" name="dream" checked>개발
     <input type="checkbox" name="dream">기획
     <input type="checkbox" name="dream">영업
     <input type="checkbox" name="dream">창업
     <br>
 
-    남기고 싶은 말<br>
+    <span>남기고 싶은 말</span>
     <textarea cols="50" rows="10" placeholder="글을 남겨주세요."></textarea>
   </form>
 
