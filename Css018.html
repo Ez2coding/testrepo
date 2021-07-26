@@ -1,0 +1,49 @@
+<!-- 216.P 예제5-1 display 프로퍼티로 박스 유형 설정 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display 프로퍼티</title>
+
+  <style>
+
+    div {
+      border: solid 2px yellowgreen;
+    }
+    #div_none {
+      display: none;
+    }
+
+    #div_inline {
+      display: inline-block;
+      
+    }
+
+    #div_inline_block {
+      display: inline-block;
+      height: 50px;
+      
+    }
+
+    span {
+      display: block;
+      border: 3px dotted red;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>인라인, 인라인 블록, 블록</h3>
+  <hr>
+  나는<div id="div_none">div(none)</div>입니다. <br><br>
+  나는<div id="div_inline">div(inline)</div>입니다. <br><br>
+  나는<div id="div_inline_block">div(inline-block)입</div>니다. <br><br>
+
+  나는<div>div<span>span(block)</span>입니다.</div>
+
+</body>
+
+</html>
