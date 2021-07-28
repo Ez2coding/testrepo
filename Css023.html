@@ -1,0 +1,58 @@
+<!-- 223P 예제 5-6 z-index로 카드 쌓기 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index 프로퍼티</title>
+
+  <style>
+
+    div {
+      position:absolute;
+    }
+
+    img {
+      position: absolute;
+    }
+
+    #img1 {
+      z-index: -3px;
+      left: 10px;
+      top: 20px;
+    }
+
+    #img2 {
+      z-index: 2;
+      left: 40px;
+      top: 30px;
+    }
+
+    #img3 {
+      z-index: 3;
+      left: 80px;
+      top: 40px;
+    }
+
+    #img4 {
+      z-index: 7;
+      left: 120px;
+      top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>z-index 프로퍼티</h2>
+  <hr>
+  <div>
+    <img src="/img/diaA.jpg" alt="다이아A" id="img1">
+    <img src="/img/heartA.jpg" alt="하트A" id="img2">
+    <img src="/img/spadeA.jpg" alt="스페이드A" id="img3">
+    <img src="/img/cloverA.jpg" alt="클로버A" id="img4">
+  </div>
+</body>
+
+</html>
