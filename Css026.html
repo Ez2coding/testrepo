@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.css">
+  <title>리스트 꾸미기</title>
+
+  <style>
+    ul>li {
+      background-color: aqua;
+    }
+
+    #square {
+      list-style: square;
+
+    }
+
+    #inside {
+      list-style: inside;
+    }
+
+    #url {
+      list-style: url('fas fa-comment');
+    }
+  </style>
+</head>
+
+<body>
+  <h3>커피 메뉴 (list-style:square;)</h3>
+  <hr>
+  <ul id="square">
+    <li>Espresso</li>
+    <li>Cappuccino</li>
+    <li>CafeLatte</li>
+  </ul>
+
+  <h3>커피 메뉴 (list-style:inside;)</h3>
+  <hr>
+  <ul id="inside">
+    <li>Espresso</li>
+    <li>Cappuccino</li>
+    <li>CafeLatte</li>
+  </ul>
+
+  <h3>커피 메뉴 (list-style:url('/media/examples/rocket.svg');)</h3>
+  <hr>
+  <ul id="url">
+    <li>Espresso</li>
+    <li>Cappuccino</li>
+    <li>CafeLatte</li>
+  </ul>
+</body>
+
+</html>
