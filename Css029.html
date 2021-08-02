@@ -1,0 +1,47 @@
+<!-- 240P 예제 5-11 CSS3 스타일 폼 꾸미기 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <title>폼스타일 주기</title>
+
+    <style>
+      label{
+        display: block;
+      }
+
+      /* input type이 text만 지정하는 셀렉터 */
+      input[type=text] {
+        color:red;
+      }
+
+      input[type=text]:focus, input[type=email]:focus {
+        font-size: 1.2em;
+      } 
+
+      input:hover, textarea:hover {
+        color: blue;
+      }
+
+      label span {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>CONTACT US</h3>
+    <hr>
+    <form action="#">
+      <label for="#"><span>Name</span><input type="text"></label>
+      <label for="#"><span>Email</span><input type="Email" placeholder="Elivs@graceland.com"></label>
+      <label for="#"><span>Comment</span><textarea name="" id="" cols="30" rows="3"></textarea></label>
+      <label for="#"><span></span><input type="button" value="submit"></label>
+    </form>
+  </body>
+</html>
