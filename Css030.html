@@ -1,12 +1,50 @@
+<!-- 243P 예제5-12 애니메이션 만들기 연습 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <style>
+    h3 {
+      animation-duration: 3s;
+      animation-name: h3ani;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes h3ani {
+      from {
+        font-size: 500%;
+      }
+
+      /* 25% {
+        font-size: 375%;
+      }
+
+      50% {
+        font-size: 250%;
+      }
+
+      75% {
+        font-size: 125%;
+      } */
+
+      to {
+        font-size: 100%
+      }
+    }
+  </style>
 </head>
+
 <body>
-  
+  <h3>꽝!</h3>
+  <hr>
+  <p>
+    꽝! 글자가 3초동안 500%에서 시작하여 100%로 바뀌는 애니메이션입니다.
+  </p>
 </body>
+
 </html>
