@@ -1,0 +1,68 @@
+<DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <title>DOC</title>
+
+    <style>
+      .textani {
+        animation-duration: 4s;
+        animation-name:textSlide;
+
+        /* 무한 반복 */
+        animation-iteration-count: infinite; 
+
+        /* 반복 주기의 방향을 바대로하고 첫번째 반복이 앞으로 재생*/
+        animation-direction:alternate;
+      }
+
+      /* 위 코드는 아래 코드로 속기 할 수 있음 */
+
+      /* 
+      p {                                         식별자
+        animation: 3s infinite alternate textSlide;
+      }
+      */
+
+      @keyframes textSlide {
+
+        /* from 대신 0% 사용 */
+        from{
+          margin-left: 100%;
+          width: 300%;
+          color: brown;
+        }
+
+        30% {
+          color:  blue;
+        }
+
+
+        50% {
+          font-size:300%;
+          margin-left: 25%;
+          width: 200%;
+          color:green;
+        }
+
+        70% {
+          color: red;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+          color: aqua;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="textani">
+      안녕하세요 반갑습니다.
+    </p>
+  </body>
+</html>
