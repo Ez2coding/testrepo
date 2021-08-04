@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    div {
+      margin-top: 60px;
+    }
+
+    #img_180:hover {
+      transform: rotate(180deg); 
+    }
+
+    #img_skew:hover {
+      transform: skew(0, -20deg);
+    }
+
+    #img_scale:hover {
+      transform: rotate(90deg) scale(0.5);
+    }
+
+  </style>
+</head>
+
+<body>
+  <h3>마우스를 올려봐요</h3>
+  <hr>
+
+  <div>
+    <img src="/img/cat.jpg" alt="킹냥이">
+  </div>
+
+  <div>
+    <img src="/img/cat.jpg" alt="킹냥이" id="img_180">
+    <span>180도 회전</span>
+  </div>
+
+    <div>
+      <img src="/img/cat.jpg" alt="킹냥이2" id="img_skew">
+      <span>y축으로 -20도 기울임</span>
+    </div>
+
+    <div>
+      <img src="/img/cat.jpg" alt="킹냥이" id="img_scale">
+      <span>90도 회전 후 크기 0.5배</span>
+    </div>
+</body>
+
+</html>
