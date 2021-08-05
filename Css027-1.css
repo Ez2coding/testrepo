@@ -1,0 +1,26 @@
+#member {
+  background: olive;
+  width: 15vw;
+}
+
+#member ul {
+  margin:0px;
+  padding: 0px;
+}
+
+#member ul li {
+  display: flex;
+  list-style: none;
+  padding: 0px 15px;
+  
+}
+
+#member ul li a {
+  color: white;
+  text-decoration: none;
+  /* 링크 밑줄 보이지 않게 하기 */
+}
+
+#member ul li a:hover {
+  color: violet;
+}
