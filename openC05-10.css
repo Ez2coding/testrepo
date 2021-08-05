@@ -1,0 +1,15 @@
+#cuty {
+  position: relative;
+  left: 25vw;
+  top: 30vh;
+}
+
+#cuty:hover {
+  animation: 2s infinite alternate big_img;
+}
+
+@keyframes big_img {
+  100% {
+    transform: scale(3);
+  }
+}
