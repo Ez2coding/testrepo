@@ -1,0 +1,31 @@
+#spadeA {
+  margin-left: 100px;
+  margin-top:100px;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+#cat {
+  margin-left: 100px;
+
+  animation: rotate 1s infinite alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg);
+  }
+
+  50% {
+    transform: rotate(-0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
